@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Phúc Hưng - Tổng kho thiết bị và phụ kiện nội thất, phụ kiện bếp chính hãng.">
   <title>Phúc Hưng — Thiết bị & Phụ kiện Nội thất</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Noto+Serif:ital,wght@0,400;1,400&display=swap&subset=vietnamese" rel="stylesheet">
   <style>
     :root{--navy:#0b2a49;--navy2:#143f68;--gold:#d8a84e;--gold2:#f0cf88;--cream:#f5f1e9;--ink:#0f1e2d;--muted:#697682}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;background:#fff}a{text-decoration:none;color:inherit}button,input,select{font:inherit}.top{height:34px;background:var(--navy);color:#c7d1da;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:.14em;text-transform:uppercase}.top b{color:var(--gold2)}
@@ -18,12 +21,17 @@
     .modal{display:none;position:fixed;inset:0;z-index:50;background:#061a2cbd;place-items:center;padding:20px}.modal.open{display:grid}.box{width:min(500px,100%);background:#fbfaf7;padding:40px;position:relative}.close{position:absolute;right:14px;top:10px;border:0;background:none;font-size:25px;color:var(--navy);cursor:pointer}.box h2{font-family:Georgia,serif;color:var(--navy);font-size:35px;font-weight:400;margin:0 0 10px}.box>p{color:var(--muted);font-size:12px;line-height:1.7}.box form{display:grid;gap:14px;margin-top:22px}.box label{font-size:9px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--navy)}.box input,.box select{width:100%;height:45px;border:1px solid #d7d7d2;background:#fff;padding:0 12px;margin-top:6px}.success{display:none;text-align:center}.success.show{display:block}.success i{display:grid;place-items:center;width:60px;height:60px;margin:auto;border-radius:50%;background:#e7d8b8;color:var(--navy);font-size:25px}
     @media(max-width:880px){.nav{display:none;position:absolute;top:84px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;align-items:stretch}.nav.open{display:flex}.menu{display:block}.hero-inner{padding-top:85px}.stats{left:18px;right:18px;justify-content:center}.heading{grid-template-columns:1fr;gap:20px}.category-grid,.grid{grid-template-columns:1fr 1fr}.expert{grid-template-columns:1fr}.expert-img{min-height:420px}.foot{grid-template-columns:1.5fr 1fr 1fr}}
     @media(max-width:580px){header{padding:0 16px;height:72px}.top{padding:0 16px;font-size:8px}.logo strong{font-size:16px}.mark{width:44px;height:44px}.nav{top:72px}.hero{height:auto;min-height:700px}.hero-inner{width:auto;margin:0 20px;padding-top:75px}.hero h1{font-size:47px}.actions{flex-direction:column;width:max-content}.stats{display:grid;grid-template-columns:repeat(3,1fr);bottom:18px}.stats div{padding:10px;text-align:center}.stats strong{font-size:15px}.brands{justify-content:flex-start}.brands small{display:none}section.pad{padding:75px 20px}.heading h2,.expert h2,.final h2{font-size:41px}.category-grid,.grid{grid-template-columns:1fr}.cat{height:430px}.product-top h2{font-size:43px}.pic{height:340px}.expert-img{min-height:350px}.expert-copy{padding:65px 20px}.services{grid-template-columns:1fr}.final .contact{flex-direction:column}.foot{grid-template-columns:1fr 1fr}.foot-logo{grid-column:1/-1}.copyright{display:block;line-height:2}.box{padding:35px 22px}}
+    body{font-family:"Be Vietnam Pro",Arial,sans-serif}
+    .hero h1,.heading h2,.expert h2,.final h2,.cat h3,.product-top h2,.info h3,.box h2,.stats strong{font-family:"Noto Serif","Times New Roman",serif}
+    .hero h1{line-height:1.08;letter-spacing:-.02em;word-break:normal;overflow-wrap:normal;font-kerning:normal}
+    .heading h2,.expert h2,.final h2{line-height:1.08;letter-spacing:-.02em}
+    .logo-image{display:none;width:72px;height:72px;object-fit:contain}
   </style>
 </head>
 <body>
   <div class="top"><span>Giao hàng & lắp đặt toàn quốc</span><b>Hotline: 1900 9213</b></div>
   <header>
-    <a class="logo" href="#home"><span class="mark">PH</span><span><strong>PHÚC HƯNG</strong><small>Thiết bị & phụ kiện nội thất</small></span></a>
+    <a class="logo" href="#home"><img class="logo-image" alt="Logo Phúc Hưng"><span class="mark">PH</span><span><strong>PHÚC HƯNG</strong><small>Thiết bị & phụ kiện nội thất</small></span></a>
     <button class="menu" aria-label="Mở menu">☰</button>
     <nav class="nav"><a href="#products">Sản phẩm</a><a href="#brands">Thương hiệu</a><a href="#solutions">Giải pháp</a><a href="#about">Về Phúc Hưng</a><button class="quote">Nhận báo giá ↗</button></nav>
   </header>
@@ -56,7 +64,14 @@
   <footer><div class="foot"><div class="foot-logo"><span class="mark">PH</span><span><strong>PHÚC HƯNG</strong><p>Tổng kho thiết bị & phụ kiện nội thất</p></span></div><div><h4>Danh mục</h4><a href="#products">Phụ kiện tủ bếp</a><a href="#products">Phụ kiện nội thất</a><a href="#products">Thiết bị nhà bếp</a></div><div><h4>Hỗ trợ</h4><a href="#about">Tư vấn lựa chọn</a><a href="#about">Chính sách bảo hành</a><a class="quote" href="javascript:void(0)">Nhận catalogue</a></div><div><h4>Liên hệ</h4><a href="tel:19009213">1900 9213</a><p>Hà Nội · Việt Nam</p><p>8:00–18:00, Thứ 2–Chủ nhật</p></div></div><div class="copyright"><span>© 2026 Phúc Hưng</span><span>HIGOLD · GANDX · BLUM · GARIS · FULCO · NISKO</span></div></footer>
   <a class="float" href="tel:19009213" aria-label="Gọi hotline">☎</a>
   <div class="modal" id="modal"><div class="box"><button class="close" aria-label="Đóng">×</button><div class="formarea"><p class="kicker">Tư vấn miễn phí</p><h2>Bạn đang quan tâm sản phẩm nào?</h2><p>Để lại thông tin, Phúc Hưng sẽ liên hệ và gửi báo giá phù hợp.</p><form id="quoteForm"><label>Họ và tên<input required placeholder="Nguyễn Văn A"></label><label>Số điện thoại<input required type="tel" placeholder="09xx xxx xxx"></label><label>Nhu cầu<select><option>Phụ kiện tủ bếp</option><option>Phụ kiện nội thất</option><option>Thiết bị nhà bếp</option><option>Tư vấn tổng thể</option></select></label><button class="btn gold" type="submit">Gửi yêu cầu →</button></form></div><div class="success"><i>✓</i><h2>Đã nhận yêu cầu!</h2><p>Cảm ơn bạn. Đội ngũ Phúc Hưng sẽ liên hệ trong thời gian sớm nhất.</p><button class="btn navy close-done">Hoàn tất</button></div></div></div>
+  <script src="site-config.js"></script>
   <script>
+    const config=window.PHUC_HUNG_CONFIG||{};
+    if(config.logoUrl){const logoImg=document.querySelector('.logo-image');logoImg.src=config.logoUrl;logoImg.style.display='block';document.querySelector('header .mark').style.display='none'}
+    if(config.heroImage)document.querySelector('.hero').style.backgroundImage=`url("${config.heroImage}")`;
+    if(config.expertImage)document.querySelector('.expert-img').style.backgroundImage=`url("${config.expertImage}")`;
+    (config.categoryImages||[]).forEach((src,i)=>{const img=document.querySelectorAll('.cat img')[i];if(img&&src)img.src=src});
+    (config.productImages||[]).forEach((src,i)=>{const img=document.querySelectorAll('.product img')[i];if(img&&src)img.src=src});
     const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');menu.onclick=()=>nav.classList.toggle('open');
     document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.product').forEach(p=>p.style.display=b.dataset.brand==='all'||p.dataset.brand===b.dataset.brand?'block':'none')});
     const modal=document.querySelector('#modal');document.querySelectorAll('.quote').forEach(b=>b.onclick=()=>{modal.classList.add('open');nav.classList.remove('open')});document.querySelector('.close').onclick=()=>modal.classList.remove('open');modal.onclick=e=>{if(e.target===modal)modal.classList.remove('open')};
